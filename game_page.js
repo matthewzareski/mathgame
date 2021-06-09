@@ -22,7 +22,7 @@ function send() {
     actual_answer = parseInt(number1) * parseInt(number2);
 
     question_number = "<h4>" + number1 + " X "+ number2 +"<h4>";
-    input_box = "<br>Answer : <input type='text' id='input_check_box><br><br>";
+    input_box = "<br>Answer : <input type='text' id='input_check_box'><br><br>";
     check_button = "<button class='btn btn-info' onclick='check()'>Check</button>";
     row = question_number + input_box + check_button ;
 
@@ -38,7 +38,7 @@ answer_turn = "player2";
 
 
 function check(){
-    get_answer = document.getElementById("input_check_box").value;
+    answer = document.getElementById("input_check_box").value;
    if(answer == actual_answer){
        if(answer_turn == "player1"){
            player1_score = player1_score +1;
